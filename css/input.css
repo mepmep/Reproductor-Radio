@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome inyectado por SonicPanel/Centova: solo en sinks del widget */
+#artwork-stage .cc_streaminfo_badge,
+#artwork-stage .cc_streaminfo_status,
+#artwork-stage .cc_reintentar,
+#artwork-stage [class*="reintentar" i],
+#artwork-stage [id*="reintentar" i],
+#artwork-stage [class*="cc_status"],
+#artwork-stage button,
+#widget-sink .cc_streaminfo_badge,
+#widget-sink .cc_streaminfo_status,
+#widget-sink .cc_reintentar,
+#widget-sink [class*="reintentar" i],
+#widget-sink [id*="reintentar" i],
+#widget-sink [class*="cc_status"],
+#widget-sink button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22d3ee;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+  background: #38bdf8;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22d3ee;
+  border: none;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.8);
+  cursor: pointer;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

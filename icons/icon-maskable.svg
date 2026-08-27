@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="neonGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Solid background covering safe area -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+  
+  <!-- Scaled content inside 80% safe zone (center 400x400) -->
+  <g transform="translate(51.2, 51.2) scale(0.8)">
+    <path d="M 120 190 A 150 150 0 0 1 392 190" fill="none" stroke="url(#neonGradMask)" stroke-width="14" stroke-linecap="round" opacity="0.35" />
+    <path d="M 152 215 A 110 110 0 0 1 360 215" fill="none" stroke="url(#neonGradMask)" stroke-width="14" stroke-linecap="round" opacity="0.65" />
+    <path d="M 184 240 A 74 74 0 0 1 328 240" fill="none" stroke="url(#neonGradMask)" stroke-width="14" stroke-linecap="round" opacity="0.95" />
+    
+    <circle cx="256" cy="270" r="36" fill="url(#neonGradMask)" />
+    <circle cx="256" cy="270" r="16" fill="#ffffff" />
+    
+    <path d="M 256 306 L 256 385" stroke="url(#neonGradMask)" stroke-width="14" stroke-linecap="round" />
+    <path d="M 206 385 L 306 385" stroke="url(#neonGradMask)" stroke-width="14" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "myradio-player",
+  "private": true,
+  "description": "Build local purged Tailwind CSS for the MyRadio PWA",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
